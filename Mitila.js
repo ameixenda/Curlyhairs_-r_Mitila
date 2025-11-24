@@ -32,7 +32,6 @@ buttonClicks.onButtonDoubleClicked(buttonClicks.AorB.A, function my_function() {
         . . . # .
         . . . . .
         `)
-    basic.pause(1000)
 })
 input.onButtonPressed(Button.A, function on_button_pressed_a() {
     radio.sendNumber(2)
@@ -48,7 +47,6 @@ input.onButtonPressed(Button.B, function on_button_pressed_b() {
 })
 input.onLogoEvent(TouchButtonEvent.Touched, function on_logo_touched() {
     basic.showIcon(IconNames.Heart)
-    basic.pause(2000)
 })
 input.onGesture(Gesture.LogoDown, function on_gesture_logo_down() {
     radio.sendNumber(4)
