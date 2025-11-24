@@ -31,7 +31,6 @@ def my_function():
         . . . # .
         . . . . .
         """)
-    basic.pause(1000)
 buttonClicks.on_button_double_clicked(buttonClicks.AorB.A, my_function)
 
 def on_button_pressed_a():
@@ -52,7 +51,6 @@ input.on_button_pressed(Button.B, on_button_pressed_b)
 
 def on_logo_touched():
     basic.show_icon(IconNames.HEART)
-    basic.pause(2000)
 input.on_logo_event(TouchButtonEvent.TOUCHED, on_logo_touched)
 
 def on_gesture_logo_down():
